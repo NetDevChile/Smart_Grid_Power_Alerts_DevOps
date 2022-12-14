@@ -9,10 +9,10 @@ Este repositorio contiene una serie de guías para desplegar [Telegraf](https://
 Se propone la creación de cinco (5) máquinas virtuales, donde se requiere:
 
 - Tres (3) de ellas, basandose en lo recomendado en [1], serán los nodos del _cluster_ Kubernetes, a las que, para alcances de la presente guía, le llamaremos **_workers_**
-- Una cuarta máquina donde se instalará Kubernetes, y desde donde se orquestará el _cluster_. A esta última Le llamaremos **_master_**
+- Una cuarta máquina donde se instalará Kubernetes. Es de donde se orquestará el _cluster_. A esta última Le llamaremos **_master_**
   > Nota: Para fines de prueba, podría usarse un solo nodo, ahorrando tiempo y espacio, pero sacrificando la Alta Disponibilidad.
-- Una quinta máquina que actuará como NFS (Network File System)
-- Cada máquina virtual debe contar con un Sistema Operativo moderno basado en Linux, un usuario sin privilegios y uno con permisos de administrador. Para la presente guía se usó Ubuntu Server 22.04.1 LTS.
+- Una quinta máquina que actuará como NFS (_Network File System_)
+- Cada máquina virtual debe contar con un Sistema Operativo moderno basado en Linux, un usuario sin privilegios y uno con permisos de administrador. Para la presente guía se usó **_Ubuntu Server 22.04.1 LTS_**.
 - Una configuración de red que permita realizar conexiones TCP/IP entre las máquinas. Esto dependerá del gestor de las máquinas virtuales que se esté usando (como por ejemplo VWare, VirtualBox, Hypervisor, etc.).
 - Una máquina física o virtual, desde donde el usuario operador usará Rancher. En la guía actual se usó Windows 10, pero podría ser cualquiera con un navegador web moderno.
 - Conexión a Internet, y conocimientos básicos de Linux y Kubernetes.
@@ -31,9 +31,10 @@ Se propone la creación de cinco (5) máquinas virtuales, donde se requiere:
 1. [Creación y preparación de las máquinas virtuales](/01_PreparacionMaquinasVirtuales.md)
 2. [Creación del _NFS_](/02_CreacionNFS.md)
 3. [Creación del _cluster_](/03_CreacionCluster.md)
-4. [Instalación de Rancher](/04_ConfiguracionRancher.md)
-5. [Configuración de Rancher](/05_InstalacionRancher.md)
-6. [Resolución de problemas](/99_ResolucionProblemas.md)
+4. [Instalación de Rancher](/04_InstalacionRancher.md)
+5. [Configuración de Rancher](/05_ConfiguracionRancher.md)
+6. [Despliegue de aplicaciones](/06_InstalacionAplicativos.md)
+7. [Resolución de problemas](/99_ResolucionProblemas.md)
 
 ## Referencias utilizadas a lo largo de la guía:
 

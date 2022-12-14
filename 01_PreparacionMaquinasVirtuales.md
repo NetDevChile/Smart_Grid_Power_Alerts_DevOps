@@ -2,12 +2,14 @@
 
 A continuación, se resumen los pasos básicos para preparar a los _workers_ y _master_ como requisitos previos de Kubernetes. Cada paso se detallará más adelante:
 
-1. Instalar servidor SSH en máquinas _workers_
-2. Generar _SSH key_ en la _master_ y copiar las llaves a las _workers_. Esto permitirá a Kubernetes orquestar los _workers_ desde _master_.
-3. Instalar el servicio docker en los _workers_, y añadir al usuario local al grupo docker.
-4. Instalar las herramientas `RKE`, `kubectl` y `helm` en la máquina _master_
+1. [Instalar servidor SSH en máquinas _workers_.](#instalación-de-servidor-ssh-en-máquinas-workers)
+2. [Generar _SSH key_ en la _master_ y copiar las llaves a las _workers_.](#generación-ssh-key-en-master-y-copia-de-llaves-a-workers)
+3. [Instalar el servicio docker en los _workers_, y añadir al usuario local al grupo docker.](#instalación-de-docker-en-máquinas-workers)
+4. [Instalar las herramientas `RKE`, `kubectl` y `helm` en la máquina _master_](#instalación-de-herramientas-rke-kubectl-y-helm-en-master)
 
-Como se comentó previamente, los comandos descritos fueron probados en _Ubuntu Server 22.04.1 LTS_. Se asume que el usuario actual tiene permisos administrador (sudoer)
+Los pasos 1 y 2 permitirán a Kubernetes orquestar los _workers_ desde _master_, y el 3 desplegar contenedores.
+
+Como se comentó previamente, los comandos descritos fueron probados en _Ubuntu Server 22.04.1 LTS_. Se asume que el usuario actual tiene permisos administrador (_sudoer_).
 
 ## Instalación de servidor SSH en máquinas _workers_
 
@@ -194,4 +196,4 @@ $ sudo mv linux-amd64/helm /usr/local/bin/
 
 > Nota: Puede eliminar el archivo original `helm-v3.10.2-linux-amd64.tar.gz` y el directorio `linux-amd64`
 
-**[Volver al README](/README.md), o ir al [paso 2](/02_CreacionNFS.md)**
+## **[Volver al README](/README.md), o ir al [paso 2](/02_CreacionNFS.md)**

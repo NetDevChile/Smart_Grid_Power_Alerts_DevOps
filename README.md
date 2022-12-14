@@ -26,13 +26,14 @@ Se propone la creación de cinco (5) máquinas virtuales, donde se requiere:
 > | `192.168.1.103` | usuario3 | _worker_ |
 > | `192.168.1.104` | usuario | NFS |
 
-## Enlaces:
+## Secciones de la guía:
 
 1. [Creación y preparación de las máquinas virtuales](/01_PreparacionMaquinasVirtuales.md)
 2. [Creación del _NFS_](/02_CreacionNFS.md)
 3. [Creación del _cluster_](/03_CreacionCluster.md)
 4. [Instalación de Rancher](/04_ConfiguracionRancher.md)
 5. [Configuración de Rancher](/05_InstalacionRancher.md)
+6. [Resolución de problemas](/99_ResolucionProblemas.md)
 
 ## Referencias utilizadas a lo largo de la guía:
 
@@ -45,5 +46,3 @@ Se propone la creación de cinco (5) máquinas virtuales, donde se requiere:
 - [7] [_Installing Helm_](https://helm.sh/docs/intro/install/) Sitio web consultado el 12/12/2022
 - [8] [_Setting up a High-availability RKE Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/kubernetes-cluster-setup/rke1-for-rancher) Sitio web consultado el 12/12/2022
 - [9] [_Install/Upgrade Rancher on a Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/pages-for-subheaders/install-upgrade-on-a-kubernetes-cluster) Sitio web consultado el 12/12/2022
-
-**[Volver al README](/README.md), o ir al [paso 2](/02_CreacionNFS.md)**

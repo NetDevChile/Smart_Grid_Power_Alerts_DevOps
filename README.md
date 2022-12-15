@@ -29,21 +29,22 @@ Se propone la creación de cinco (5) máquinas virtuales, donde se requiere:
 ## Secciones de la guía:
 
 1. [Creación y preparación de las máquinas virtuales](/01_PreparacionMaquinasVirtuales.md)
-2. [Creación del _NFS_](/02_CreacionNFS.md)
+2. [Creación de un servidor _NFS_](/02_CreacionNFS.md)
 3. [Creación del _cluster_](/03_CreacionCluster.md)
 4. [Instalación de Rancher](/04_InstalacionRancher.md)
 5. [Configuración de Rancher](/05_ConfiguracionRancher.md)
-6. [Despliegue de aplicaciones](/06_InstalacionAplicativos.md)
+6. [Despliegue de las aplicaciones (Grafana, Influxdb y Telegraf)](/06_InstalacionAplicativos.md)
 7. [Resolución de problemas](/99_ResolucionProblemas.md)
 
 ## Referencias utilizadas a lo largo de la guía:
 
-- [1] [_Setting up a High-availability RKE Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/infrastructure-setup/ha-rke1-kubernetes-cluster). Sitio web consultado el 12/12/2022
-- [2] [_OpenSSH Server_](https://ubuntu.com/server/docs/service-openssh). Sitio web consultado el 12/12/2022
-- [3] [_Install Docker Engine on Ubuntu_](https://docs.docker.com/engine/install/ubuntu/). Sitio web consultado el 12/12/2022
-- [4] [_RKE Kubernetes Installation_](https://rancher.com/docs/rke/latest/en/installation/) Sitio web consultado el 12/12/2022
-- [5] [_Install and Set Up kubectl on Linux_](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) Sitio web consultado el 12/12/2022
-- [6] [_How to Install and Configure an NFS Server on Ubuntu 22.04_](https://linuxhint.com/install-and-configure-nfs-server-ubuntu-22-04/) Sitio web consultado el 14/12/2022
-- [7] [_Installing Helm_](https://helm.sh/docs/intro/install/) Sitio web consultado el 12/12/2022
-- [8] [_Setting up a High-availability RKE Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/kubernetes-cluster-setup/rke1-for-rancher) Sitio web consultado el 12/12/2022
-- [9] [_Install/Upgrade Rancher on a Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/pages-for-subheaders/install-upgrade-on-a-kubernetes-cluster) Sitio web consultado el 12/12/2022
+- [1] [_Setting up a High-availability RKE Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/infrastructure-setup/ha-rke1-kubernetes-cluster). Sitio web consultado el 12/12/2022.
+- [2] [_OpenSSH Server_](https://ubuntu.com/server/docs/service-openssh). Sitio web consultado el 12/12/2022.
+- [3] [_Install Docker Engine on Ubuntu_](https://docs.docker.com/engine/install/ubuntu/). Sitio web consultado el 12/12/2022.
+- [4] [_RKE Kubernetes Installation_](https://rancher.com/docs/rke/latest/en/installation/) Sitio web consultado el 12/12/2022.
+- [5] [_Install and Set Up kubectl on Linux_](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) Sitio web consultado el 12/12/2022.
+- [6] [_How to Install and Configure an NFS Server on Ubuntu 22.04_](https://linuxhint.com/install-and-configure-nfs-server-ubuntu-22-04/) Sitio web consultado el 14/12/2022.
+- [7] [_Installing Helm_](https://helm.sh/docs/intro/install/) Sitio web consultado el 12/12/2022.
+- [8] [_Setting up a High-availability RKE Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/kubernetes-cluster-setup/rke1-for-rancher) Sitio web consultado el 12/12/2022.
+- [9] [_Install/Upgrade Rancher on a Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/pages-for-subheaders/install-upgrade-on-a-kubernetes-cluster) Sitio web consultado el 12/12/2022.
+- [10] [_Deploy Grafana on Kubernetes_](https://grafana.com/docs/grafana/latest/setup-grafana/installation/kubernetes/) Sitio web consultado el 15/12/2022.

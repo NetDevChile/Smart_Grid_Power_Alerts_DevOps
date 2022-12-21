@@ -135,4 +135,4 @@ En un navegador web, ingresar en la dirección la IP del nodo del despliegue, in
 
 ![PVC de Grafana](/imgs/13_grafana_UI.PNG "PVC de Grafana")
 
-## **[Volver al README](/README.md), al [paso 1](/Cap2_01_DespliegueApps.md), o ir al [paso 3](/Cap2_03_DespliegueInfluxdb.md)**
+**[Volver al README](/README.md), al [paso 1](/Cap2_01_DespliegueApps.md), o ir al [paso 3](/Cap2_03_DespliegueInfluxdb.md)**

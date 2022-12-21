@@ -52,6 +52,6 @@ En la imágen a continuación, se ve como se puede pegar el texto, asignando un 
 
 > NOTA: En kubernetes, un _namespace_ es un conjunto abstracto de recursos del _cluster_ que permite mantenerlos en orden
 
-## **[Volver al README](/README.md), o ir al [paso 2](/Cap2_02_DespliegueGrafana.md)**
+**[Volver al README](/README.md), o ir al [paso 2](/Cap2_02_DespliegueGrafana.md)**
 
 (\*) Basado en el artículo de Wikipedia en español, visitado el 20/12/2022

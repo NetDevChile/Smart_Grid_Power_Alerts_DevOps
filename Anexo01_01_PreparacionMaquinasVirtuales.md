@@ -220,4 +220,4 @@ $ sudo mv linux-amd64/helm /usr/local/bin/
 
 > Nota: Puede eliminar el archivo original `helm-v3.10.2-linux-amd64.tar.gz` y el directorio `linux-amd64`
 
-## **[Volver al README](/README.md), o ir al [paso 2](/Anexo01_02_CreacionNFS.md)**
+**[Volver al README](/README.md), o ir al [paso 2](/Anexo01_02_CreacionNFS.md)**

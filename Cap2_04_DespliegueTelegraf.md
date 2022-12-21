@@ -4,9 +4,16 @@
 
 ### Modificación de la imágen original de Docker Hub
 
-Se creó una imágen propia a partir de la original de telegraf (v1.24) debio a que se debió incluir datos de tipo _MIBS_ para el _plugin_ del protocolo de comunicación SNMP. Es por ésto que, en el caso de telegraf, no usamos la imágen oficial del _hub_ de Docker, si no una creada por NetDev
+Se creó una imágen propia a partir de la original de Telegraf, versión 1.24, debido la necesidad de incluir definiciones de tipo de datos _MIBS_ para el _plugin_ del protocolo de comunicación _SNMP_. Es por ésto que, en el caso de Telegraf, no usamos la imágen oficial del _hub_ de Docker Hub, si no que una creada por NetDev
 
-El archivo YAML del despliegue de _telegraf_ se puede [descargar aquí](yamls/02_telegraf.yaml)
+# El despliegue
+
+El archivo YAML del despliegue de Telegraf se puede [descargar aquí](yamls/02_telegraf.yaml)
+
+Consideraciones del archivo YAML del despliegue de Telegraf:
+
+- Como se comentó previamente, la imágen a utilizar es `smartgridsystembynetdevchile/telegraf-netdev:v1`
+- Se crea un punto de montaje en `/etc/telegraf` que permite asociar el despliegue al archivo `telegraf.conf` definido como recurso de tipo _ConfigMap_, lo que posibilita tener control de la configuración de Telegraf desde la interfaz de usuario web de Rancher
 
 ## Alternativa a la imágen de NetDev
 
@@ -29,5 +36,7 @@ El _script_ anterior hace lo siguiente:
 - Descomprimir el archivo `zip` usando `7zip`
 
 El _script_ se puede [descargar aquí](/scripts/descarga_unzip_mibs.sh)
+
+A continuación, puede ver imágenes (capturas de pantalla) del sistema funcionando haciendo clic [aquí](Cap2_05_Imagenes.md)
 
 **[Volver al README](/README.md)**, al [paso 3](/Cap2_03_DespliegueInfluxdb.md)

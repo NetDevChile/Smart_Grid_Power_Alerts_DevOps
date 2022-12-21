@@ -13,4 +13,3 @@ spec:
       storage: 500Gi
   storageClassName: rook-ceph-block
   volumeMode: Filesystem
-  volumeName: pvc-c2410dd3-b269-4668-a702-5762fa2118fd

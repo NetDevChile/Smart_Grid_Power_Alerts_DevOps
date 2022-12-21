@@ -2,6 +2,8 @@
 
 Versión 0.1
 
+![Bienvenido](imgs/aura.gif)
+
 La presente guía es parte de la base de conocimientos de NetDev
 
 ## Alcance
@@ -12,7 +14,9 @@ La guía se divide en 3 capítulos:
 
 1.  [Configuración de los _Power Devices_ (desde ahora en delante: _PowDevs_)](/Cap1_PowerDevices.md).
 2.  [Despliegue y configuración de plataforma _software_ de monitoreo](/Cap2_01_DespliegueApps.md).
-3.  (En desarrollo)
+3.  (En desarrollo).
+
+Haga clic [aquí](/Cap2_05_Imagenes.md) para ver capturas de pantalla del sistema funcionando.
 
 ## Resolución de problemas
 

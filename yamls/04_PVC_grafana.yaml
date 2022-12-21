@@ -13,4 +13,3 @@ spec:
       storage: 50Gi
   storageClassName: rook-ceph-block
   volumeMode: Filesystem
-  volumeName: pvc-2f7a2eb2-d9ce-4f91-bef8-7b96165f7323

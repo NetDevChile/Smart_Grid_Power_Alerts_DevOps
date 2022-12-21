@@ -31,6 +31,15 @@ spec:
 
 Puede descargar la declaración en un archivo YAML [aquí](/yamls/04_PVC_grafana.yaml).
 
+### _Secrets_
+
+Se crearó un recurso de tipo _secret_ para almacenar:
+
+- Usuario administrador
+- Contraseña del usuario administrador
+
+de Grafana. El archivo YAML del _secret_ se puede descargar aquí (en desarrollo)
+
 ### El _deployment_
 
 El despliegue de Grafana se encuentra en archivo YAML que puede descargar [aquí](/yamls/03_grafana.yaml).

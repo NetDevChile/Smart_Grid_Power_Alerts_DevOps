@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    workload.user.cattle.io/workloadselector: apps.deployment-netdev-rubin-2022-nd-telegraf
-  name: nd-telegraf
+    app: influxdb
+  name: nd-influxdb
   namespace: netdev-rubin-2022
 spec:
   progressDeadlineSeconds: 600
@@ -11,7 +11,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: apps.deployment-netdev-rubin-2022-nd-telegraf
+      app: influxdb
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -19,30 +19,29 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      annotations:
-        cattle.io/timestamp: "2022-12-21T17:07:55Z"
       creationTimestamp: null
       labels:
-        workload.user.cattle.io/workloadselector: apps.deployment-netdev-rubin-2022-nd-telegraf
+        app: influxdb
     spec:
-      affinity: {}
       containers:
-        - image: smartgridsystembynetdevchile/telegraf-netdev:v1
+        - envFrom:
+            - secretRef:
+                name: influxdb-creds
+          image: docker.io/influxdb:1.8
           imagePullPolicy: IfNotPresent
-          name: nd-telegraf
+          name: influxdb
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           volumeMounts:
-            - mountPath: /etc/telegraf
-              name: vol-z9hgl
+            - mountPath: /var/lib/influxdb
+              name: var-lib-influxdb
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
       volumes:
-        - configMap:
-            defaultMode: 420
-            name: nd-telegraf-cm
-          name: vol-z9hgl
+        - name: var-lib-influxdb
+          persistentVolumeClaim:
+            claimName: netdev-influxdb

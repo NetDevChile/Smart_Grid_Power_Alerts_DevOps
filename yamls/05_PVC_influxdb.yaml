@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  finalizers:
+    - kubernetes.io/pvc-protection
+  name: netdev-influxdb
+  namespace: netdev-rubin-2022
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Gi
+  storageClassName: rook-ceph-block
+  volumeMode: Filesystem
+  volumeName: pvc-c2410dd3-b269-4668-a702-5762fa2118fd

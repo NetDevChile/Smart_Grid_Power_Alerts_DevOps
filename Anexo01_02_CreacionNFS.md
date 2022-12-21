@@ -70,4 +70,8 @@ sudo ufw enable
 sudo ufw status
 ```
 
+### _Script_ de la sección
+
+El _script_ para automatizar esta sección se [encuentra aquí](/scripts/creacion_nfs.sh).
+
 **[Volver al README](/README.md), al [paso 1](/Anexo01_01_PreparacionMaquinasVirtuales.md), o ir al [paso 3](/Anexo01_03_CreacionCluster.md)**

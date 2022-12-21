@@ -39,6 +39,6 @@ Corroborar el funcionamiento del cluster:
 $ kubectl get nodes
 ```
 
-Si todo está bien, ahora tenemos operativo un _cluster_ de tipo Kubernetes de 3 nodos. Ahora podemos instalar Rancher en este _cluster_
+Si todo marchó bien, debiese estar operativo un _cluster_ de tipo Kubernetes de 3 nodos. Ahora podemos instalar Rancher en este _cluster_
 
 **[Volver al README](/README.md), al [paso 2](/Anexo01_02_CreacionNFS.md), o ir al [paso 4](/Anexo01_04_InstalacionRancher.md)**

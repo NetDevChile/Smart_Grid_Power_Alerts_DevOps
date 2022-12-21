@@ -1,0 +1,88 @@
+apiVersion: v1
+data:
+  telegraf.conf:
+    "[global_tags]\n[agent]\n  interval = \"10s\"\n  round_interval =
+    true\n  metric_batch_size = 1000\n  metric_buffer_limit = 10000\n  collection_jitter
+    = \"0s\"\n  flush_interval = \"10s\"\n  flush_jitter = \"0s\"\n  precision = \"\"\n
+    \ hostname = \"\"\n  omit_hostname = false\n\n#####################\n[[outputs.influxdb]]\n
+    \   urls = [\"http://10.42.1.22:8086\"]\n    database = \"localDB\"\ntimeout =
+    \"0s\"\n    username = \"admin\"\n    password = \"admin\"\n    retention_policy
+    = \"\"\n#[[outputs.influxdb_v2]]\n#   urls = [\"http://172.17.0.2:30002\"]\n#
+    \  token = \"Ky284_PKRRpwbVPurw05YOCk8AMTFVw4n3kC7lDvRL9hbXHJKdC5ziCDZEbafdmVD0H3XdxojTpOQ5Cfm_qCkw==\"\n#
+    \  organization = \"netdev\"\n#   bucket = \"monitor\"\n#[[outputs.prometheus_client]]\n#
+    \   listen = \":9273\"\n#    metric_version = 2\n###############################################################################\n#
+    \                           INPUT PLUGINS                                    #\n###############################################################################\n[[inputs.cpu]]\n
+    \ percpu = true\n  totalcpu = true\n  collect_cpu_time = false\n  report_active
+    = false\n[[inputs.disk]]\n  ignore_fs = [\"tmpfs\", \"devtmpfs\", \"devfs\", \"iso9660\",
+    \"overlay\", \"aufs\", \"squashfs\"]\n[[inputs.diskio]]\n  \n[[inputs.kernel]]\n
+    \n[[inputs.mem]]\n  \n[[inputs.processes]]\n  \n[[inputs.swap]]\n  \n[[inputs.system]]\n\n###############################################################################\n#
+    \                           INPUT PLUGINS                                    #\n###############################################################################\n[[inputs.snmp]]\n
+    \ ## Agent addresses to retrieve values from.\n  agents = [\"udp://10.18.3.21:161\"]\n\n
+    \ ## Timeout for each request.\n  timeout = \"5s\"\n\n  ## SNMP version; can be
+    1, 2, or 3.\n   version = 1\n\n   path = [\"/usr/share/snmp/mibs\"]\n  ## SNMP
+    community string.\n   community = \"public\"\n\n  ## Agent host tag\n  # agent_host_tag
+    = \"agent_pm\"\n\n  ## Number of retries to attempt.\n  retries = 3\n\n##### Voltage
+    ######\n\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::vVan.0\"\n
+    \   name = \"vVan\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::vVbn.0\"\n
+    \   name = \"vVbn\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::vVcn.0\"\n
+    \   name = \"vVcn\"\n\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::vVab.0\"\n
+    \   name = \"Measured Line Voltage - Vab\"\n  [[inputs.snmp.field]]\n    oid =
+    \"SCHNEIDER-PM5XXX-MIB::vVbc.0\"\n    name = \"Measured Line Voltage - Vbc\"\n
+    \ [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::vVca.0\"\n    name
+    = \"Measured Line Voltage - Vca\"\n\n\n##### LoadCurrent ######\n\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::lcIa.0\"\n    name = \"Phase A\"\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::lcIb.0\"\n    name = \"Phase B\"\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::lcIC.0\"\n    name = \"Phase C\"\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::lcIn.0\"\n    name = \"Measured Neutral Current\"\n\n######
+    Frequency #######\n\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::fFrequency.0\"\n
+    \   name = \"Measured System Frequency\"\n\n###### Power #######\n\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::pActivePa.0\"\n    name = \"Active Power - Phase
+    A\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pActivePb.0\"\n
+    \   name = \"Active Power - Phase B\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pActivePc.0\"\n
+    \   name = \"Active Power - Phase C\"\n\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pReactivePa.0\"\n
+    \   name = \"Reactive Power - Phase A\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pReactivePb.0\"\n
+    \   name = \"Reactive Power - Phase B\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pReactivePc.0\"\n
+    \   name = \"Reactive Power - Phase C\"\n\n  [[inputs.snmp.field]]\n    oid =
+    \"SCHNEIDER-PM5XXX-MIB::pApparentPa.0\"\n    name = \"Apparent Power - Phase A\"\n
+    \ [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pApparentPb.0\"\n    name
+    = \"Apparent Power - Phase B\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pApparentPc.0\"\n
+    \   name = \"Apparent Power - Phase C\"\n\n###### PowerFActor######\n\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::pfPfa.0\"\n#    grok_patterns = ['%{DATA:dato}
+    ']\n    name = \"Power Factor - Phase A\"\n\n  [[inputs.snmp.field]]\n    oid
+    = \"SCHNEIDER-PM5XXX-MIB::pfPfb.0\"\n    name = \"Power Factor - Phase B\"\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::pfPfc.0\"\n    name = \"Power Factor - Phase
+    C\"\n\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pfPfDisplacementA.0\"\n
+    \   name = \"Displacement Power Factor - Phase A\"\n\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::pfPfDisplacementB.0\"\n    name = \"Displacement
+    Power Factor - Phase B\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pfPfDisplacementC.0\"\n
+    \   name = \"Displacement Power Factor - Phase C\"\n\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::pfPftot.0\"\n    name = \"Total Power Factor
+    - Phase (A, B, C)\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pfPfDisplacementTotal.0\"\n
+    \   name = \"Total Displacement Power Factor - Phase (A, B, C)\"\n\n\n## Totales
+    \ Power ####\n\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pActivePtot.0\"\n
+    \   name = \"Total Active Power - Phase (A,B,C)\"\n  [[inputs.snmp.field]]\n    oid
+    = \"SCHNEIDER-PM5XXX-MIB::pReactivePtot.0\"\n    name = \"Total Reactive Power
+    - Phase (A,B,C)\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::pApparentPtot.0\"\n
+    \   name = \"Total Apparent Power - Phase (A,B,C)\"\n\n## acumulated Energy ###\n\n
+    \ [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::aeActiveEDelivered.0\"\n
+    \   name = \"Accumulated Energy - Active Energy Delivered\"\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::aeReactiveEDelivered.0\"\n    name = \"Accumulated
+    Energy - Reactive Energy Delivered\"\n  [[inputs.snmp.field]]\n    oid = \"SCHNEIDER-PM5XXX-MIB::aeApparentEDelivered.0\"\n
+    \   name = \"Accumulated Energy - Apparent Energy Delivered\"\n\n  [[inputs.snmp.field]]\n
+    \   oid = \"SCHNEIDER-PM5XXX-MIB::aeResetDateTime.0\"\n    name = \"Accumulated
+    Energy - Date /Time of Last Reset\"\n\n\n\n\n############################## Transformacion
+    DP01#####################\n[[processors.converter]]\n    [processors.converter.fields]\n
+    \     float = [\"vVan\",\"vVbn\",\"vVcn\",\"Accumulated Energy - Active Energy
+    Delivered\",\"Accumulated Energy - Apparent Energy Delivered\",\"Accumulated Energy
+    - Reactive Energy Delivered\",\"Active Power - Phase A\",\"Active Power - Phase
+    B\",\"Active Power - Phase C\",\"Apparent Power - Phase A\",\"Apparent Power -
+    Phase B\",\"Apparent Power - Phase C\",\"Measured Line Voltage - Vab\",\"Measured
+    Line Voltage - Vbc\",\"Measured Line Voltage - Vca\",\"Measured Neutral Current\",\"Measured
+    System Frequency\",\"Phase A\",\"Phase B\",\"Phase C\",\"Reactive Power - Phase
+    A\",\"Reactive Power - Phase B\",\"Reactive Power - Phase C\",\"Total Active Power
+    - Phase (A,B,C)\",\"Total Apparent Power - Phase (A,B,C)\",\"Total Reactive Power
+    - Phase (A,B,C)\"]"
+kind: ConfigMap
+metadata:
+  name: nd-telegraf-cm
+  namespace: netdev-rubin-2022

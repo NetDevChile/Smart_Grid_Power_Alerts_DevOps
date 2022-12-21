@@ -62,6 +62,10 @@ $ sudo systemctl enable ssh --now
 > $ ssh usuario@<ip de la máquina virtual>
 > ```
 
+### _Script_ de la sección
+
+El _script_ para automatizar esta sección se [encuentra aquí](/scripts/instalacion_openssh.sh). Contiene una sección para instalar, habilitar y configurar el _firewall_ mediante la herramienta `ufw`.
+
 ## Instalación de `docker` en máquinas _workers_
 
 `docker` es uno de los servicio de contenedores utilizado por Kubernetes, que es exigido por `rke`. Basado en [3] se procede la instalación **en cada máquina _worker_**
@@ -109,6 +113,10 @@ $ sudo usermod -aG docker $USER
 ```
 
 Para corroborar que su usuario tiene acceso el servicio docker, cierre sesión y autentíquese nuevamente, para luego ejecutar el comando `$ docker ps`
+
+### _Script_ de la sección
+
+El _script_ para automatizar esta sección se [encuentra aquí](/scripts/instalacion_docker.sh).
 
 ## Generación SSH key en _master_ y copia de llaves a _workers_
 
@@ -219,5 +227,9 @@ $ sudo mv linux-amd64/helm /usr/local/bin/
 ```
 
 > Nota: Puede eliminar el archivo original `helm-v3.10.2-linux-amd64.tar.gz` y el directorio `linux-amd64`
+
+### _Script_ de la sección
+
+El _script_ para automatizar esta sección se [encuentra aquí](/scripts/instalacion_herramientas_CLI.sh).
 
 **[Volver al README](/README.md), o ir al [paso 2](/Anexo01_02_CreacionNFS.md)**

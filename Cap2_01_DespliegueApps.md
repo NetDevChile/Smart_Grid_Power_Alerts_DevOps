@@ -8,6 +8,10 @@ A continuación se entregan detalles de como desplegar los _software_ [Grafana](
 
 > Nota: En Kubernetes, un _deployment_ es una declaración que ordena al _cluster_ a desplegar un _software_ contenedorizado. En la práctica, se define un archivo YAML (que veremos en la siguiente sección) que declara meta información del despliegue, entre ella, nombre, volúmenes, variables de entorno, mapeo de puertos, y, probablemente lo más importante, una imágen de un micro servicio (en nuestro caso, una imágen Docker alojada en Docker Hub) a ser desplegada en uno o más _pods_ de nuestro _cluster_. Rancher, por su parte, permite monitorear los despliegues y conectarse a ellos mediante una consola.
 
+**[Volver al README](/README.md), o ir al [paso 2](/Cap2_02_DespliegueGrafana.md)**
+
+---
+
 ## Sección complementaria educativa: Uso del formato YAML
 
 Rancher permite declarar despliegues, volúmenes, secretos, mapeos de configuración y muchos otros recursos, mediante formularios web que facilitan el proceso. Sin embargo, una vez que se domina la herramienta es más rápido y eficiente trabajar directamente con el resultado del formulario: una definción en formato YAML.
@@ -51,7 +55,5 @@ En la imágen a continuación, se ve como se puede pegar el texto, asignando un 
 ![Imágen pegar YAML](imgs/cap02_01_copyPasteYAML.PNG)
 
 > NOTA: En kubernetes, un _namespace_ es un conjunto abstracto de recursos del _cluster_ que permite mantenerlos en orden
-
-**[Volver al README](/README.md), o ir al [paso 2](/Cap2_02_DespliegueGrafana.md)**
 
 (\*) Basado en el artículo de Wikipedia en español, visitado el 20/12/2022

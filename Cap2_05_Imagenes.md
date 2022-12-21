@@ -1,23 +1,23 @@
 # Capturas de pantalla de Rancher en producción
 
-# _Secrets_
+## _Secrets_
 
 ![Secrets](/imgs/funcionando_01_secrets.jpeg)
 
-# _PVCs_
+## _PVCs_
 
-![Secrets](/imgs/funcionando_02_pvcs.jpeg)
+![PVC](/imgs/funcionando_02_pvcs.jpeg)
 
-# _ConfigMaps_
+## _ConfigMaps_
 
-![Secrets](/imgs/funcionando_03_cmaps.jpeg)
+![CM](/imgs/funcionando_03_cmaps.jpeg)
 
-# _Services_
+## _Services_
 
-![Secrets](/imgs/funcionando_04_services.jpeg)
+![Services](/imgs/funcionando_04_services.jpeg)
 
-# _Pods_
+## _Pods_
 
-![Secrets](/imgs/funcionando_05_pods.jpeg)
+![Pods](/imgs/funcionando_05_pods.jpeg)
 
 \*\*[Volver al README](/README.md)

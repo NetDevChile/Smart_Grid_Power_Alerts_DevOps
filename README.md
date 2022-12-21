@@ -1,40 +1,34 @@
-# Rancher + Telegraf + Grafana + InfluxDB
+# Guía _Smart Grid_, monitoreo y alarma
 
-Este repositorio contiene una serie de guías para desplegar [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/), [Grafana](https://grafana.com/), [InfluxDB](https://www.influxdata.com/) y un [NFS](https://es.wikipedia.org/wiki/Network_File_System) basado en [Ubuntu](https://ubuntu.com/), en un ambiente [Kubernetes](https://kubernetes.io/es/), usando la distribución [RKE](https://www.rancher.com/products/rke), en máquinas virtuales Linux basadas en [Ubuntu Server](https://ubuntu.com/download/server)
+Versión 0.1
 
-## Esquema general de la arquitectura
+La presente guía es parte de la base de conocimientos de NetDev
 
-![Esquema general](/imgs/01_esquema_general.PNG "Esquema general")
+## Alcance
 
-Se propone la creación de cinco (5) máquinas virtuales, donde se requiere:
+La guía tiene como propósito documentar el proyecto Smart Grid de manera que se se facilite el entendimiento de la situación actual de la implementación, y como referencia en caso que se desee replicar o re implementar.
 
-- Tres (3) de ellas, basandose en lo recomendado en [1], serán los nodos del _cluster_ Kubernetes, a las que, para alcances de la presente guía, le llamaremos **_workers_**
-- Una cuarta máquina donde se instalará Kubernetes. Es de donde se orquestará el _cluster_. A esta última Le llamaremos **_master_**
-  > Nota: Para fines de prueba, podría usarse un solo nodo, ahorrando tiempo y espacio, pero sacrificando la Alta Disponibilidad.
-- Una quinta máquina que actuará como NFS (_Network File System_)
-- Cada máquina virtual debe contar con un Sistema Operativo moderno basado en Linux, un usuario sin privilegios y uno con permisos de administrador. Para la presente guía se usó **_Ubuntu Server 22.04.1 LTS_**.
-- Una configuración de red que permita realizar conexiones TCP/IP entre las máquinas. Esto dependerá del gestor de las máquinas virtuales que se esté usando (como por ejemplo VWare, VirtualBox, Hypervisor, etc.).
-- Una máquina física o virtual, desde donde el usuario operador usará Rancher. En la guía actual se usó Windows 10, pero podría ser cualquiera con un navegador web moderno.
-- Conexión a Internet, y conocimientos básicos de Linux y Kubernetes.
+La guía se divide en 3 capítulos:
 
-> Para efectos de la presente guía, asumiremos que las IPs de los _workers_ y los usuarios locales de cada máquina virtual son:
-> | IPs | Usuario local | Rol |
-> |-----------------|----------|----------|
-> | `192.168.1.100` | usuario | _master_ |
-> | `192.168.1.101` | usuario1 | _worker_ |
-> | `192.168.1.102` | usuario2 | _worker_ |
-> | `192.168.1.103` | usuario3 | _worker_ |
-> | `192.168.1.104` | usuario | NFS |
+1.  [Configuración de los _Power Devices_ (desde ahora en delante: _PowDevs_)](/Cap1_PowerDevices.md).
+2.  [Despliegue y configuración de plataforma _software_ de monitoreo](/Cap2_01_DespliegueApps.md).
+3.  (En desarrollo)
 
-## Secciones de la guía:
+## Resolución de problemas
 
-1. [Creación y preparación de las máquinas virtuales](/01_PreparacionMaquinasVirtuales.md)
-2. [Creación de un servidor _NFS_](/02_CreacionNFS.md)
-3. [Creación del _cluster_](/03_CreacionCluster.md)
-4. [Instalación de Rancher](/04_InstalacionRancher.md)
-5. [Configuración de Rancher](/05_ConfiguracionRancher.md)
-6. [Despliegue de las aplicaciones (Grafana, Influxdb y Telegraf)](/06_InstalacionAplicativos.md)
-7. [Resolución de problemas](/99_ResolucionProblemas.md)
+En el siguiente enlace se encuentra un artículo con la lista de recomendaciones en caso de haber problemas con el proyecto en general. [Ir a Resolución de problemas](/ResolucionProblemas.md)
+
+## Anexos
+
+### Anexo I: Laboratorio Rancher
+
+Corresponde a la documentación de labores de preparación de ambientes locales para pruebas de concepto, con fines de aprendizaje y experimentación, que se realizaron durante el proyecto
+
+1.  [Creación y preparación de las máquinas virtuales](/Anexo01_01_PreparacionMaquinasVirtuales.md)
+2.  [Creación de un servidor _NFS_](/Anexo01_02_CreacionNFS.md)
+3.  [Creación del _cluster_](/Anexo01_03_CreacionCluster.md)
+4.  [Instalación de Rancher](/Anexo01_04_InstalacionRancher.md)
+5.  [Configuración de Rancher](/Anexo01_05_ConfiguracionRancher.md)
 
 ## Referencias utilizadas a lo largo de la guía:
 

@@ -27,4 +27,4 @@ Ingresar un nombre y descripción. Seleccionar _NFS Share_ como _plugin_ de volu
 
 ![Nuevo persistent Volumes con datos](/imgs/06_agregaDatosPersistenVolume.PNG "Nuevo persistent Volumes con datos")
 
-**[Volver al README](/README.md), o ir al [paso 5](/06_InstalacionAplicativos.md)**
+\*\*[Volver al README](/README.md), o al [paso 4](/Anexo01_04_InstalacionRancher.md)

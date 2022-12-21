@@ -72,4 +72,4 @@ Por ejemplo:
 
 Guardar y abrir la url `https://rancher.my.org/dashboard/?setup=admin` en cualquier navegador moderno
 
-**[Volver al README](/README.md), o ir al [paso 4](/05_ConfiguracionRancher.md)**
+**[Volver al README](/README.md), al [paso 3](/Anexo01_03_CreacionCluster.md), o ir al [paso 5](/Anexo01_05_ConfiguracionRancher.md)**

@@ -8,13 +8,13 @@ Basado en [7], y asumiendo las IPs y usuario del inicio de la guía, el archivo 
 
 ```yaml
 nodes:
-  - address: 192.1681.101
+  - address: 192.168.101
     user: usuario1
     role: [controlplane, worker, etcd]
-  - address: 192.1681.102
+  - address: 192.168.102
     user: usuario2
     role: [controlplane, worker, etcd]
-  - address: 192.1681.103
+  - address: 192.168.103
     user: usuario3
     role: [controlplane, worker, etcd]
 ```
@@ -41,4 +41,4 @@ $ kubectl get nodes
 
 Si todo está bien, ahora tenemos operativo un _cluster_ de tipo Kubernetes de 3 nodos. Ahora podemos instalar Rancher en este _cluster_
 
-**[Volver al README](/README.md), o ir al [paso 4](/04_InstalacionRancher.md)**
+**[Volver al README](/README.md), al [paso 2](/Anexo01_02_CreacionNFS.md), o ir al [paso 4](/Anexo01_04_InstalacionRancher.md)**

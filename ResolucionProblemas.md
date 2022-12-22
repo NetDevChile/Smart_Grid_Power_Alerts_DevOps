@@ -1,4 +1,4 @@
-# Resolución de problemas
+# Conceptos y Resolución de problemas
 
 ## _Sobre los Power Devices | PowDevs_
 

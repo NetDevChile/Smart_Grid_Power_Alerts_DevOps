@@ -1,0 +1,15 @@
+{
+  "nut_host": "localhost",
+  "nut_ups": "salicru",
+  "nut_vars": {
+    "ups.load": { "type": "int", "measurement_name": "ups_load" },
+    "input.voltage": { "type": "float", "measurement_name": "ups_voltage" },
+    "battery.charge": { "type": "int", "measurement_name": "ups_charge" }
+  },
+  "influx_host": "http://localhost:8086",
+  "influx_creds": ["THE_INFLUXDB_USER", "THE_INFLUXDB_PASSWORD"],
+  "influx_db": "telegraf",
+  "influx_tags": {
+    "ups": "NAME_OF_YOUR_UPS"
+  }
+}

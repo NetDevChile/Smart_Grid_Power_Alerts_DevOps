@@ -1,0 +1,21 @@
+# 01-network-manager-all.yaml
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    lo:
+      dhcp4: false
+      optional: false
+      addresses:
+        - 127.0.0.1/8
+        - 172.19.221.221/24
+    enp2s0:
+      dhcp4: true
+      dhcp6: false
+      optional: false
+    #    addresses:
+    #     - 139.229.163.56/24
+
+    enxd0374585a783:
+      dhcp4: true

@@ -34,6 +34,19 @@ Corresponde a la documentación de labores de preparación de ambientes locales 
 4.  [Instalación de Rancher](/Anexo01_04_InstalacionRancher.md)
 5.  [Configuración de Rancher](/Anexo01_05_ConfiguracionRancher.md)
 
+### Anexo II: Otras tecnologías usadas en el desarrollo del proyecto
+
+Buscando el _stack_ de tecnologías apropiadas para la arquitectura general de la solución, NetDev intentó las siguientes soluciones:
+
+1. [NUT](/Anexo02_01_NUT.md)
+2. [SSMTP](/Anexo02_02_SSMTP.md)
+3. Varios archivos DockerCompose de antiguo esquema previo a Kubernetes + Rancher
+4. [Archivo de configuración de red NetPlan (deprecado)](</configs/(deprecado)red.yml>)
+5. [Antigua configuración de Telgraf (deprecada)](</configs/(deprecado)telegraf.conf>)
+6. [Definición del _dashboard_ en Grafana en formato JSON](/jsons/dashboard.json)
+
+Hubo un antiguo _script_ de instalación para las primeras versiones de pruebas conceptuales. Se puede revisar [aquí](</scripts/(deprecado)script_instalacion.sh>)
+
 ## Referencias utilizadas a lo largo de la guía:
 
 - [1] [_Setting up a High-availability RKE Kubernetes Cluster_](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/infrastructure-setup/ha-rke1-kubernetes-cluster). Sitio web consultado el 12/12/2022.

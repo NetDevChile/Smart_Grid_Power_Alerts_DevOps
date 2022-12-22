@@ -1,0 +1,7 @@
+# /etc/nut/upsd.users
+
+[admin]
+    password = "strong_password"
+    actions = SET FSD
+    instcmds = ALL
+    upsmon master

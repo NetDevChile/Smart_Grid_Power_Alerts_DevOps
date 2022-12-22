@@ -6,6 +6,22 @@
 
 Se creó una imágen propia a partir de la original de Telegraf, versión 1.24, debido la necesidad de incluir definiciones de tipo de datos _MIBS_ para el _plugin_ del protocolo de comunicación _SNMP_. Es por ésto que, en el caso de Telegraf, no usamos la imágen oficial del _hub_ de Docker Hub, si no que una creada por NetDev
 
+## _ConfigMap_
+
+Previo al _deployment_ de Telegraf, se necesita crear un recurso _ConfigMap_. El contenido del archivo YAML (que puede ser descargado [aquí](/yamls/09_configMapTelegraf.yaml)) es el siguiente:
+
+```yaml
+apiVersion: v1
+data:
+  telegraf.conf: <contenido del archivo telegraf.conf creado por NetDev>
+kind: ConfigMap
+metadata:
+name: nd-telegraf-cm
+namespace: netdev-rubin-2022
+```
+
+Una copia del contenido del archivo `telegraf.conf`, **modificado por NetDev** a partir del original del repositorio oficial, se encuentra [aquí](/configs/telegraf.conf)
+
 # El despliegue
 
 El archivo YAML del despliegue de Telegraf se puede [descargar aquí](yamls/02_telegraf.yaml)
@@ -13,7 +29,7 @@ El archivo YAML del despliegue de Telegraf se puede [descargar aquí](yamls/02_t
 Consideraciones del archivo YAML del despliegue de Telegraf:
 
 - Como se comentó previamente, la imágen a utilizar es `smartgridsystembynetdevchile/telegraf-netdev:v1`
-- Se crea un punto de montaje en `/etc/telegraf` que permite asociar el despliegue al archivo `telegraf.conf` definido como recurso de tipo _ConfigMap_, lo que posibilita tener control de la configuración de Telegraf desde la interfaz de usuario web de Rancher
+- Se crea un punto de montaje en `/etc/telegraf` que permite asociar el despliegue al archivo `telegraf.conf`, definido como recurso de tipo _ConfigMap_ en la sección anterior, lo que posibilita tener control de la configuración de Telegraf desde la interfaz de usuario web de Rancher
 
 ## Alternativa a la imágen de NetDev
 

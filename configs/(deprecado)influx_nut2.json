@@ -1,0 +1,153 @@
+{
+  "nut_host": "host",
+  "nut_ups": "salicru",
+  "nut_vars": {
+    "input.L1-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l1n_voltage"
+    },
+    "input.L2-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l2n_voltage"
+    },
+    "input.L3-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l3n_voltage"
+    },
+
+    "input.L1.current": {
+      "type": "float",
+      "measurement_name": "ups_l1_current_in"
+    },
+    "input.L2.current": {
+      "type": "float",
+      "measurement_name": "ups_l2_current_in"
+    },
+    "input.L3.current": {
+      "type": "float",
+      "measurement_name": "ups_l3_current_in"
+    },
+
+    "input.L1.realpower": {
+      "type": "float",
+      "measurement_name": "ups_l1_real_in"
+    },
+    "input.L2.realpower": {
+      "type": "float",
+      "measurement_name": "ups_l2_real_in"
+    },
+    "input.L3.realpower": {
+      "type": "float",
+      "measurement_name": "ups_l3_real_in"
+    },
+
+    "input.bypass.L1-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l1n.by"
+    },
+    "input.bypass.L2-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l2n.by"
+    },
+    "input.bypass.L3-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l3n.by"
+    },
+
+    "output.L1-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l1n_vol_out"
+    },
+    "output.L2-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l2n_vol_out"
+    },
+    "output.L3-N.voltage": {
+      "type": "float",
+      "measurement_name": "ups_l3n_vol_out"
+    },
+
+    "output.L1.current": {
+      "type": "float",
+      "measurement_name": "ups_l1_current_out"
+    },
+    "output.L2.current": {
+      "type": "float",
+      "measurement_name": "ups_l2_current_out"
+    },
+    "output.L3.current": {
+      "type": "float",
+      "measurement_name": "ups_l3_current_out"
+    },
+
+    "output.L1.realpower": {
+      "type": "float",
+      "measurement_name": "ups_l1_real_out"
+    },
+    "output.L2.realpower": {
+      "type": "float",
+      "measurement_name": "ups_l2_real_out"
+    },
+    "output.L3.realpower": {
+      "type": "float",
+      "measurement_name": "ups_l3_real_out"
+    },
+
+    "output.L1.power.percent": {
+      "type": "float",
+      "measurement_name": "ups_l1_power_out"
+    },
+    "output.L2.power.percent": {
+      "type": "float",
+      "measurement_name": "ups_l2_power_out"
+    },
+    "output.L3.power.percent": {
+      "type": "float",
+      "measurement_name": "ups_l3_power_out"
+    },
+
+    "input.frequency": {
+      "type": "float",
+      "measurement_name": "ups_frequency_in"
+    },
+    "input.voltage.nominal": {
+      "type": "float",
+      "measurement_name": "ups_vol_nominal_in"
+    },
+
+    "output.frequency": {
+      "type": "float",
+      "measurement_name": "ups_frequency_out"
+    },
+    "output.frequency.nominal": {
+      "type": "float",
+      "measurement_name": "ups_frequency_n_out"
+    },
+    "output.voltage.nominal": {
+      "type": "float",
+      "measurement_name": "ups_vol_n_out"
+    },
+
+    "battery.charge": {
+      "type": "float",
+      "measurement_name": "ups_battery_charge"
+    },
+    "battery.current": { "type": "float", "measurement_name": "ups_current" },
+    "battery.runtime.low": {
+      "type": "float",
+      "measurement_name": "ups_runtime_low"
+    },
+    "battery.voltage": { "type": "float", "measurement_name": "ups_voltage" },
+    "ups.temperature": {
+      "type": "float",
+      "measurement_name": "ups_temperature"
+    },
+    "battery.runtime": { "type": "float", "measurement_name": "ups_runtime" }
+  },
+  "influx_host": "http://influx1:8086",
+  "influx_creds": ["telegraf_w", "strong_password"],
+  "influx_db": "telegraf",
+  "influx_tags": {
+    "ups": "salicru"
+  }
+}

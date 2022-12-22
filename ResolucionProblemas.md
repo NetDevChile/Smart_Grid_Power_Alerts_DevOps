@@ -1,8 +1,10 @@
 # Resolución de problemas
 
-## Sobre los _PowDevs_
+## _Sobre los Power Devices | PowDevs_
 
-> En construcción. Disculpe
+Los PowDevs o Power Devices son Equipos Electrónicos/Eléctricos/Electromecánicos/Electrohidraulicos de diversas marcas y tipos (multivendor), desde los cuales adquirimos las métricas de potencia, parámetros eléctricos y frecuencias para hacer los análisis espectrales eléctricos y luego las alarmas según su comportamiento espectral.
+
+Un ejemplo de PowDev es un Generador, otro puede ser una UPS, otro un Electromotor y así cualquier equipo que genere, almacene, consuma o procese potencia eléctrica.
 
 ## Sobre Rancher
 

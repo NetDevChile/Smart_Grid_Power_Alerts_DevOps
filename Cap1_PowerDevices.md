@@ -18,4 +18,4 @@ En la imágen a continuación, se encuentra el esquema general del proyecto _Sma
 
 > Sección en desarrollo. Disculpe las molestias
 
-**[Volver al README](/README.md)**, o ir al [capítulo 2](/Cap2_01_DespliegueApps.md)
+**[Volver al README](/README.md), o ir al [capítulo 2](/Cap2_01_DespliegueApps.md)**

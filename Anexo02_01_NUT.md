@@ -41,4 +41,4 @@ systemctl status nut-monitor.service
 journalctl -xe
 ```
 
-\*\*[Volver al README](/README.md)
+**[Volver al README](/README.md)**

@@ -20,4 +20,4 @@
 
 ![Pods](/imgs/funcionando_05_pods.jpeg)
 
-\*\*[Volver al README](/README.md)
+**[Volver al README](/README.md)**

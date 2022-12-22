@@ -14,4 +14,4 @@ $ sudo apt install ssmtp -y
 
 El archivo de configuración se encuentra [aquí](/configs/ssmtp.conf)
 
-\*\*[Volver al README](/README.md)
+**[Volver al README](/README.md)**

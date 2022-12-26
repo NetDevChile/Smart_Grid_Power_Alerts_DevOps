@@ -10,11 +10,12 @@ La presente guía es parte de la base de conocimientos de NetDev
 
 La guía tiene como propósito documentar el proyecto Smart Grid de manera que se se facilite el entendimiento de la situación actual de la implementación, y como referencia en caso que se desee replicar o re implementar.
 
-La guía se divide en 3 capítulos:
+Para consultar la historia del proyecto, hacer click [aquí](/Anexo03_01_Historia.md)
+
+La guía se divide en 2 capítulos:
 
 1.  [Configuración de los _Power Devices_ (desde ahora en delante: _PowDevs_)](/Cap1_PowerDevices.md).
 2.  [Despliegue y configuración de plataforma _software_ de monitoreo](/Cap2_01_DespliegueApps.md).
-3.  (En desarrollo).
 
 Haga clic [aquí](/Cap2_05_Imagenes.md) para ver capturas de pantalla del sistema funcionando.
 
@@ -46,6 +47,10 @@ Buscando el _stack_ de tecnologías apropiadas para la arquitectura general de l
 6. [Definición del _dashboard_ en Grafana en formato JSON](/jsons/dashboard.json)
 
 Hubo un antiguo _script_ de instalación para las primeras versiones de pruebas conceptuales. Se puede revisar [aquí](</scripts/(deprecado)script_instalacion.sh>)
+
+### Anexo III: La historia del proyecto
+
+Para consultar la historia del proyecto, hacer click [aquí](/Anexo03_01_Historia.md)
 
 ## Referencias utilizadas a lo largo de la guía:
 

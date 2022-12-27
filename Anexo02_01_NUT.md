@@ -1,6 +1,6 @@
 # NUT
 
-Network UPS Tools (tambipen conocido como _NUT_) es un conjunto de componentes de software diseñado para monitorear dispositivos de energía, como fuentes de alimentación ininterrumpida, unidades de distribución de energía, controladores solares y unidades de fuente de alimentación de servidores.
+Network UPS Tools (tambien conocido como _NUT_) es un conjunto de componentes de software diseñado para monitorear dispositivos de energía, como fuentes de alimentación ininterrumpida, unidades de distribución de energía, controladores solares y unidades de fuente de alimentación de servidores.
 
 Se crearon archivos de configuración y _scripts_ para el uso de un servidor NUT, InfluxDB y envío de alarmas. Actualmente, este trabajo queda archivado y descartado para dar pie al uso del protocolo SNMP
 

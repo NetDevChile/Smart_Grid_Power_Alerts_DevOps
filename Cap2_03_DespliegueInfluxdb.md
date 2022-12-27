@@ -37,7 +37,7 @@ Se crearó un recurso de tipo _secret_ para InfluxDB, para almacenar:
 - Un usuario
 - La contraseña del usuario del punto anterior
 
-El archivo YAML del _secret_ se puede descargar [aquí](/)
+El archivo YAML del _secret_ se puede descargar [aquí](yamls/11_secret_influxdb.yaml)
 
 ## El despliegue
 

@@ -42,32 +42,34 @@ La siguiente tabla representa una línea de tiempo del año 2022
 | ETAPA 8 - Prueba de Acceso y notificación del</br>Sistema Desarrollado en Docker Containers                                                                                     | 20-jul  | 26-ago |     |     | ▄   | ██▀ |     |     |     |     |
 | ETAPA 9 - Depuración y Funcionamiento del Sistema</br>Desarrollado en Docker Containers                                                                                         | 20-jul  | 5-ago  |     |     | ▄   | ▀   |     |     |     |     |
 | ETAPA 10 - Aprovisionamiento modulo NPORT                                                                                                                                       | 01-ago  | 29-ago |     |     |     | ███ |     |     |     |     |
-| ETAPA 11 Requerimientos adicionales                                                                                                                                             | 21-sept | 23-doc |     |     |     |     | ███ | ███ | ███ | ███ |
-| - Laboratorio Kubernetes (r3s)                                                                                                                                                  |         |        |     |     |     |     | ███ | ███ | ███ | ███ |
-| - Laboratorio Rancher + Kubernetes (rke)                                                                                                                                        |         |        |     |     |     |     | ███ | ███ | ███ | ███ |
-| - Nueva documentación, formato MD                                                                                                                                               |         |        |     |     |     |     | ███ | ███ | ███ | ███ |
+| ETAPA 11 Requerimientos adicionales                                                                                                                                             | 21-sept | 23-dic |     |     |     |     | ███ | ███ | ███ | ███ |
+| - Laboratorio Kubernetes (r3s)                                                                                                                                                  | 21-sept | 21-nov |     |     |     |     | █   | ███ |     |     |
+| - Laboratorio Rancher + Kubernetes (rke)                                                                                                                                        | 21-nov  | 23-dic |     |     |     |     |     |     | █   | ███ |
+| - Nueva documentación, formato MD                                                                                                                                               | 5-dic   | 23-dic |     |     |     |     |     |     |     | ███ |
 
 ## Detalle de los entregables
 
 Denominaremos _Ecosistema_ a la totalidad de los _software_ desplegados y configurados requeridos por el proyecto
 
-### Ecosistema desplegado en Ubuntu Linux nativo
+### 1. Ecosistema desplegado en Ubuntu Linux nativo
 
 ![Ubuntu nativo](/imgs/anexo3_01_ubuntu_nativo.png)
 
-### Ecosistema _"dockerizado"_
+### 2. Ecosistema _"dockerizado"_
 
 Se procedió a encapsular el paquete NUT (Debian) nativo como imágen para ser usado como contenedor Docker.
 
 ![Dockerizado](/imgs/anexo3_02_dockerizado.png)
 
-### Ecosistema _"dockerizado"_ en _cluster_ Kubernetes, sin Alta Disponibilidad
+[Definición del DockerFile](</yamls/(deprecado)DockerFileInflux.yaml>)
+
+### 3. Ecosistema _"dockerizado"_ en _cluster_ Kubernetes, sin Alta Disponibilidad
 
 Se procedió a orquestar los contenedores Docker mediante un _cluster_ básico Kubernetes, sin Alta Disponibilidad (desde ahora en adelante AD)
 
 ![Dockerizado](/imgs/anexo3_03_kubernetizado.png)
 
-### Ecosistema en Kubernetes + Rancher, con AD
+### 4. Ecosistema en Kubernetes + Rancher, con AD
 
 > Imágen de Aldo aquí
 

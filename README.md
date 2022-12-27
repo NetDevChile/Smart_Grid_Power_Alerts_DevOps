@@ -5,10 +5,7 @@
 | 0.1     | Línea base                      |
 | 0.2     | Se agrega historia del proyecto |
 
-![Bienvenido](imgs/video_muestra_rancher_grafana.mp4)
-
-<video src="imgs/video_muestra_rancher_grafana.mp4" controls="controls" style="max-width: 730px;">
-</video>
+![Bienvenido](imgs/video_muestra_rancher_grafana.gif)
 
 > **La presente guía es parte de la base de conocimientos de NetDev**
 

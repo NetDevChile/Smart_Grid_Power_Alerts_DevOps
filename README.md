@@ -7,6 +7,9 @@
 
 ![Bienvenido](imgs/video_muestra_rancher_grafana.mp4)
 
+<video src="imgs/video_muestra_rancher_grafana.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
 > **La presente guía es parte de la base de conocimientos de NetDev**
 
 ## Alcance

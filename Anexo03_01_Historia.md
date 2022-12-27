@@ -6,43 +6,46 @@ Se presenta un resumen de la historia del proyecto, donde destacan la evolución
 
 La siguiente tabla representa una línea de tiempo del año 2022
 
-| Tareas                                                                                                                                                                                                                                 | Inicio | Fin    | Mayo | Junio | Julio | Agosto | Septiembre | Octubre | Noviembre | Diciembre |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ | ---- | ----- | ----- | ------ | ---------- | ------- | --------- | --------- |
-| Reuniones/Correos para dilucidar la forma en que se aplicará el desarrollo y en donde se exigieron los desarrollos y requerimientos adicionales al contrato, desarrollos y requerimientos adicionales presentados en ETAPAS 6-7-8-9-10 | 01-may | 10-jun | X    | X     |       |        |
-| Desarrollo de un sistema alternativo de desarrollo de drivers                                                                                                                                                                          |        |        |      |       |       |        |
-| - Enlace de registros UPS-1                                                                                                                                                                                                            | ████   |        |      |       |       |        |            |         |           |
-| - Creación máquina virtual de pruebas                                                                                                                                                                                                  |        |        |      |       |       |        |            |         |           |
-| - Visualización Datos                                                                                                                                                                                                                  |        |        |      |       |       |        |            |         |           |
-| - Enlace de registros DPU-01                                                                                                                                                                                                           |        |        |      |       |       |        |            |         |           |
-| - Acceso a registros UPS-1                                                                                                                                                                                                             |        |        |      |       |       |        |            |         |           |
-| GitHub & Big Picture Plan                                                                                                                                                                                                              |        |        |      |       |       |        |            |         |           |
-| - Acceso a Internet GPRS                                                                                                                                                                                                               |        |        |      |       |       |        |            |         |           |
-| - Acceso a registros DP-01                                                                                                                                                                                                             |        |        |      |       |       |        |            |         |           |
-| - Visualización de datos UPS-1                                                                                                                                                                                                         |        |        |      |       |       |        |            |         |           |
-| - Acceso a registros UPS-Aux (UPS-2)                                                                                                                                                                                                   |        |        |      |       |       |        |            |         |           |
-| - Reuniones Avance y Dirección LSST/Rubin                                                                                                                                                                                              |        |        |      |       |       |        |            |         |           |
-| - Enlace de registros UPS-2 con NUT                                                                                                                                                                                                    |        |        |      |       |       |        |            |         |           |
-| - Pruebas de Equipo GPRS en Rubin                                                                                                                                                                                                      |        |        |      |       |       |        |            |         |           |
-| - Kubernetes en Laboratorio NetDev                                                                                                                                                                                                     |        |        |      |       |       |        |            |         |           |
-| - Revisión datos HW que obtiene datos del Generador                                                                                                                                                                                    |        |        |      |       |       |        |            |         |           |
-| - Visualización de datos DPU01                                                                                                                                                                                                         |        |        |      |       |       |        |            |         |           |
-| - Aprovisionamiento Equipos GPRS USA (post recepción lista permitidos AURA)                                                                                                                                                            |        |        |      |       |       |        |            |         |           |
-| - Aprovisionamiento Equipos GPRS Chile                                                                                                                                                                                                 |        |        |      |       |       |        |            |         |           |
-| - Visualización de datos UPS-2 en Grafanna                                                                                                                                                                                             |        |        |      |       |       |        |            |         |           |
-| - Conexión sistema a Slack Channel                                                                                                                                                                                                     |        |        |      |       |       |        |            |         |           |
-| - Alarmas y pruebas respectivas                                                                                                                                                                                                        |        |        |      |       |       |        |            |         |           |
-| - Reuniones Avance y Dirección LSST/Rubin                                                                                                                                                                                              |        |        |      |       |       |        |            |         |           |
-| - Reunion Avance LSST/Rubin                                                                                                                                                                                                            |        |        |      |       |       |        |            |         |           |
-| - Desarrollo Drivers Generador [Ticket cursó mas tiempo del esperado]                                                                                                                                                                  |        |        |      |       |       |        |            |         |           |
-| Dockerizado y Funcionamiento (Re-programación) del Sistema [ADDITIONAL RESOLVED][etapas 6-7-8-9]                                                                                                                                       |        |        |      |       |       |        |            |         |           |
-| ETAPA 6 - El Sistema Desarrollado y Entregado en _Linux Native_ se pide reprogramar para pasar a un Desarrollo totalmente Dockerizado en lo que se donomina _Docker Containers_                                                        |        |        |      |       |       |        |            |         |           |
-| ETAPA 7 - Integración de Drivers de Comunicación al nuevo desarrollo en Docker Containers                                                                                                                                              |        |        |      |       |       |        |            |         |           |
-| ETAPA 7.0 - Docker Network Access                                                                                                                                                                                                      |        |        |      |       |       |        |            |         |           |
-| ETAPA 7.1 - Docker Multivendor Drivers Access                                                                                                                                                                                          |        |        |      |       |       |        |            |         |           |
-| ETAPA 8 - Prueba de Acceso y notificación del Sistema Desarrollado en Docker Containers                                                                                                                                                |        |        |      |       |       |        |            |         |           |
-| ETAPA 9 - Depuración y Funcionamiento del Sistema Desarrollado en Docker Containers                                                                                                                                                    |        |        |      |       |       |        |            |         |           |
-| ETAPA 10 - Aprovisionamiento modulo NPORT                                                                                                                                                                                              |        |        |      |       |       |        |            |         |           |
-| ETAPA 11 Requerimientos adicionales                                                                                                                                                                                                    |        |        |      |       |       |        |            |         |           |
+| Tareas                                                                                                                                                                          | Inicio  | Fin    | May | Jun | Jul | Ago | Sep | Oct | Nov | Dic |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+| Reuniones/Correos para dilucidar la forma de desarrollar, nuevas exigencias y requerimientos adicionales (etapas 6 a 10)                                                        | 01-may  | 10-jun | ███ | █▀  |     |     |     |     |     |     |
+| Desarrollo de un sistema alternativo de< desarrollo de drivers                                                                                                                  | 20-may  | 27-may | █   |     |     |     |     |     |     |     |
+| - Enlace de registros UPS-1                                                                                                                                                     | 20-may  | 3-jun  |     |     |     |     |     |     |     |     |
+| - Creación máquina virtual de pruebas                                                                                                                                           | 21-may  | 24-may | ▄   |     |     |     |     |     |     |     |
+| - Visualización Datos                                                                                                                                                           | 25-may  | 1-jun  | ▄   | ▀   |     |     |     |     |     |     |
+| - Enlace de registros DPU-01                                                                                                                                                    | 27-may  | 1-jun  | ▄   | ▀   |     |     |     |     |     |     |
+| - Acceso a registros UPS-1                                                                                                                                                      | 25-may  | 31-may | ▄   |     |     |     |     |     |     |     |
+| GitHub & Big Picture Plan                                                                                                                                                       | 30-may  | 13-jun | ▄   | █   |     |     |     |     |     |     |
+| - Acceso a Internet GPRS                                                                                                                                                        | 31-may  | 7-jun  | ▄   | ▀   |     |     |     |     |     |     |
+| - Acceso a registros DP-01                                                                                                                                                      | 1-jun   | 13-jul |     | ███ | █   |     |     |     |     |     |
+| - Visualización de datos UPS-1                                                                                                                                                  | 3-jun   | 10-jun |     | █   |     |     |     |     |     |     |
+| - Acceso a registros UPS-Aux (UPS-2)                                                                                                                                            | 3-jun   | 17-jun |     | █▀  |     |     |     |     |     |     |
+| - Reuniones Avance y Dirección LSST/Rubin                                                                                                                                       | 16-jun  | 22-jun |     | █   |     |     |     |     |     |     |
+| - Enlace de registros UPS-2 con NUT                                                                                                                                             | 17-jun  | 24-jun |     | █   |     |     |     |     |     |     |
+| - Pruebas de Equipo GPRS en Rubin                                                                                                                                               | 20-jun  | 11-jul |     | ▄   | █   |     |     |     |     |     |
+| - Kubernetes en Laboratorio NetDev                                                                                                                                              | 1-jul   | 6-jul  |     |     | ▀   |     |     |     |     |     |
+| - Revisión datos HW que obtiene datos del</br> Generador                                                                                                                        | 22-jun  | 20-jul |     | ▄   | ██  |     |     |     |     |     |
+| - Visualización de datos DPU01                                                                                                                                                  | 22-jun  | 23-jun |     | ▄   | ██▀ |     |     |     |     |     |
+| - Aprovisionamiento Equipos GPRS USA (post</br> recepción lista permitidos AURA)                                                                                                | 29-jun  | 10-ago |     | ▄   | ███ | █   |     |     |     |     |
+| - Aprovisionamiento Equipos GPRS Chile                                                                                                                                          | 29-jun  | 25-jul |     | ▄   | ██▀ |     |     |     |     |     |
+| - Visualización de datos UPS-2 en Grafana                                                                                                                                       | 4-jul   | 18-jul |     |     | ██  |     |     |     |     |     |
+| - Conexión sistema a Slack Channel                                                                                                                                              | 12-jul  | 13-jul |     |     | █   |     |     |     |     |     |
+| - Alarmas y pruebas respectivas                                                                                                                                                 | 13-jul  | 25-jul |     |     | █   |     |     |     |     |     |
+| - Reuniones Avance y Dirección LSST/Rubin                                                                                                                                       | 15-jul  | 15-jul |     |     | █   |     |     |     |     |     |
+| - Reunion Avance LSST/Rubin                                                                                                                                                     | 29-jul  | 3-ago  |     |     | ▄   | ▀   |     |     |     |     |
+| - Desarrollo Drivers Generador [Ticket cursó</br>mas tiempo del esperado]                                                                                                       | 2-ago   | 16-ago |     |     |     | █▀  |     |     |     |     |
+| Dockerizado y Funcionamiento (Re-programación)</br>del Sistema                                                                                                                  | 27-jun  | 26-ago |     | ▄   | ███ | ██▀ |     |     |     |     |
+| ETAPA 6 - El Sistema Desarrollado y Entregado en _Linux Native_ se pide reprogramar para pasar a un Desarrollo totalmente Dockerizado en lo que se donomina _Docker Containers_ | 27-jun  | 4-ago  |     | ▄   | ███ | ▀   |     |     |     |     |
+| ETAPA 7 - Integración de Drivers de Comunicación</br>al nuevo desarrollo en Docker Containers                                                                                   | 20-jul  | 17-ago |     |     | ▄   | ██  |     |     |     |     |
+| ETAPA 7.1 - Docker Network Access                                                                                                                                               | 20-jul  | 10-ago |     |     | ▄   | █   |     |     |     |     |
+| ETAPA 7.2 - Docker Multivendor Drivers Access                                                                                                                                   | 20-jul  | 17-ago |     |     | ▄   | █▀  |     |     |     |     |
+| ETAPA 8 - Prueba de Acceso y notificación del</br>Sistema Desarrollado en Docker Containers                                                                                     | 20-jul  | 26-ago |     |     | ▄   | ██▀ |     |     |     |     |
+| ETAPA 9 - Depuración y Funcionamiento del Sistema</br>Desarrollado en Docker Containers                                                                                         | 20-jul  | 5-ago  |     |     | ▄   | ▀   |     |     |     |     |
+| ETAPA 10 - Aprovisionamiento modulo NPORT                                                                                                                                       | 01-ago  | 29-ago |     |     |     | ███ |     |     |     |     |
+| ETAPA 11 Requerimientos adicionales                                                                                                                                             | 21-sept | 23-doc |     |     |     |     | ███ | ███ | ███ | ███ |
+| - Laboratorio Kubernetes (r3s)                                                                                                                                                  |         |        |     |     |     |     | ███ | ███ | ███ | ███ |
+| - Laboratorio Rancher + Kubernetes (rke)                                                                                                                                        |         |        |     |     |     |     | ███ | ███ | ███ | ███ |
+| - Nueva documentación, formato MD                                                                                                                                               |         |        |     |     |     |     | ███ | ███ | ███ | ███ |
 
 ## Detalle de los entregables
 
@@ -50,14 +53,22 @@ Denominaremos _Ecosistema_ a la totalidad de los _software_ desplegados y config
 
 ### Ecosistema desplegado en Ubuntu Linux nativo
 
-<details><summary>CLICK ME</summary>
-<p>
+![Ubuntu nativo](/imgs/anexo3_01_ubuntu_nativo.png)
 
-#### We can hide anything, even code!
+### Ecosistema _"dockerizado"_
 
-```ruby
-   puts "Hello World"
-```
+Se procedió a encapsular el paquete NUT (Debian) nativo como imágen para ser usado como contenedor Docker.
 
-</p>
-</details>
+![Dockerizado](/imgs/anexo3_02_dockerizado.png)
+
+### Ecosistema _"dockerizado"_ en _cluster_ Kubernetes, sin Alta Disponibilidad
+
+Se procedió a orquestar los contenedores Docker mediante un _cluster_ básico Kubernetes, sin Alta Disponibilidad (desde ahora en adelante AD)
+
+![Dockerizado](/imgs/anexo3_03_kubernetizado.png)
+
+### Ecosistema en Kubernetes + Rancher, con AD
+
+> Imágen de Aldo aquí
+
+**[Volver al README](/README.md)**

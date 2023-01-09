@@ -1,26 +1,38 @@
 # Guía _Smart Grid_, monitoreo y alarma
 
-| Versión | Descripción                     |
-| ------- | ------------------------------- |
-| 0.1     | Línea base                      |
-| 0.2     | Se agrega historia del proyecto |
-
-![Bienvenido](imgs/video_muestra_rancher_grafana.gif)
+| Versión | Descripción                       |
+| ------- | --------------------------------- |
+| 0.1     | Línea base                        |
+| 0.2     | Se agrega historia del proyecto   |
+| 0.3     | Se agregan diagramas _"as-built"_ |
 
 > **La presente guía es parte de la base de conocimientos de NetDev**
 
+## Vista previa de la solución y diagrama _"as-built"_
+
+### Vista previa de la solución funcionando en ambiente productivo
+
+Imagen del dashboard en funcionamiento dentro de Rancher/RKE1:
+
+![Preview](imgs/video_muestra_rancher_grafana.gif)
+
+### Diagrama _"as-built"_ de la solución final funcionando en ambiente productivo
+
+![final_asbuild](imgs/15_rancher_asbuild.png)
+
 ## Alcance
 
-La guía tiene como propósito documentar el proyecto Smart Grid de manera que se se facilite el entendimiento de la situación actual de la implementación, y como referencia en caso que se desee replicar o re implementar.
+La guía tiene como propósito documentar el proyecto Smart Grid facilitando el entendimiento de la situación actual de la implementación, y como referencia en caso que se desee hacer mejoras, replicar o re-implementar.
 
 Para consultar la historia del proyecto, hacer click [aquí](/Anexo03_01_Historia.md).
 
-La guía se divide en 2 capítulos:
+La guía se divide en 3 capítulos principales (descritos a continuación) y una serie de anexos (que se [encuentran más abajo](#anexos)). Se destaca, entre ellos, [la historia del proyecto](Anexo03_01_Historia.md)
+
+Capítulos:
 
 1.  [Configuración de los _Power Devices_ (desde ahora en delante: _PowDevs_)](/Cap1_PowerDevices.md).
 2.  [Despliegue y configuración de plataforma _software_ de monitoreo](/Cap2_01_DespliegueApps.md).
-
-Haga clic [aquí](/Cap2_05_Imagenes.md) para ver capturas de pantalla del sistema funcionando.
+3.  [Vista previa del sistema funcionando en producción y diagramas _"as-built"_](/Cap2_05_Imagenes.md).
 
 ## Resolución de problemas
 

@@ -30,7 +30,7 @@ La guía se divide en 3 capítulos principales (descritos a continuación) y una
 
 Capítulos:
 
-1.  [Configuración de los _Power Devices_ (desde ahora en delante: _PowDevs_)](/Cap1_PowerDevices.md).
+1.  [Introducción: Conceptos y esquema final general del proyecto _Smart Grid System_](/Cap1_PowerDevices.md).
 2.  [Despliegue y configuración de plataforma _software_ de monitoreo](/Cap2_01_DespliegueApps.md).
 3.  [Vista previa del sistema funcionando en producción y diagramas _"as-built"_](/Cap2_05_Imagenes.md).
 

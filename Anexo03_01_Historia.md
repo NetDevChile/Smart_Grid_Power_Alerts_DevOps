@@ -71,6 +71,8 @@ Se procedió a orquestar los contenedores Docker mediante un _cluster_ básico K
 
 ### 4. Ecosistema en Kubernetes + Rancher, con AD
 
-> Imágen de Aldo aquí
+La versión final es el paso de contenedores a su orquestación gracias a Kubernetes (motor RKE1) y Rancher, asegurando Alta Disponibilidad
+
+![AD](/imgs/15_rancher_asbuild.png)
 
 **[Volver al README](/README.md)**

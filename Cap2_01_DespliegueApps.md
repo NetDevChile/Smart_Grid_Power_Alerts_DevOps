@@ -48,7 +48,7 @@ A continuación, invitamos a revisar en detalle el desliegue de cada aplicación
 
 En cada sección, se presentan el contenido (en aquellos casos que no sea muy extenso) de las declaraciones en formato YAML de los despliegues (_deployments_) y sus recursos dependientes (_PVC_, _Service_ y otros). El usuario podrá cargar rápidamente las declaraciones en formato YAML usando el botón _"Import YAML"_ que se encuentra en la barra superior a la derecha de la interfaz de Rancher en la vista del _cluster_ seleccionado. Para mayor detalle sobre el formato YAML y como cargar las definiciones en Rancher, por favor, revise la sección educativa que se encuentra más abajo en este mismo artículo.
 
-**[Volver al README](/README.md), o ir al [paso 2](/Cap2_02_DespliegueGrafana.md)**
+**[Volver al README](/README.md), o ir al [despliegue de Grafana](/Cap2_02_DespliegueGrafana.md)**
 
 ---
 

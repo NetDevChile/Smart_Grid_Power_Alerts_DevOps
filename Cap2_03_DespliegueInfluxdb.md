@@ -48,4 +48,4 @@ Algunas observaciones de interés:
 - La imágen que se usa es `docker.io/influxdb:1.8`
 - La ruta del punto de montaje, para la persistencia de los datos, es `/var/lib/influxdb` y se mapea con el _PVC_ `netdev-influxdb` creado recientemente
 
-**[Volver al README](/README.md), al [paso 2](/Cap2_02_DespliegueGrafana.md), o ir al [paso 4](/Cap2_04_DespliegueTelegraf.md)**
+**[Volver al README](/README.md), al [despliegue de Grafana](/Cap2_02_DespliegueGrafana.md), o ir al [despliegue de Telegraf](/Cap2_04_DespliegueTelegraf.md)**

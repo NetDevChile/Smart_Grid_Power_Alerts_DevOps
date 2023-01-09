@@ -55,4 +55,4 @@ El _script_ se puede [descargar aquí](/scripts/descarga_unzip_mibs.sh)
 
 A continuación, puede ver imágenes (capturas de pantalla) del sistema funcionando haciendo clic [aquí](Cap2_05_Imagenes.md)
 
-**[Volver al README](/README.md), o al [paso 3](/Cap2_03_DespliegueInfluxdb.md)**
+**[Volver al README](/README.md), o al [despliegue de InfluxDB](/Cap2_03_DespliegueInfluxdb.md)**

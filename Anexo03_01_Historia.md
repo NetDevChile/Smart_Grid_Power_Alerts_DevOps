@@ -55,7 +55,7 @@ Denominaremos _Ecosistema_ a la totalidad de los _software_ desplegados y config
 
 ![Ubuntu nativo](/imgs/anexo3_01_ubuntu_nativo.png)
 
-### 2. Ecosistema _"dockerizado"_
+### 2. Ecosistema _"dockerizado"_ con NUT
 
 Se procedió a encapsular el paquete NUT (Debian) nativo como imágen para ser usado como contenedor Docker.
 
@@ -67,12 +67,18 @@ Se procedió a encapsular el paquete NUT (Debian) nativo como imágen para ser u
 
 Se procedió a orquestar los contenedores Docker mediante un _cluster_ básico Kubernetes, sin Alta Disponibilidad (desde ahora en adelante AD)
 
-![Dockerizado](/imgs/anexo3_03_kubernetizado.png)
+![AD](/imgs/anexo3_03_kubernetizado.png)
 
-### 4. Ecosistema en Kubernetes + Rancher, con AD
+### 4. Ecosistema _"dockerizado"_ local, sin AD ni NUT, incluyendo Telegraf
+
+Se procedió a reemplazar NUT por Telegraf y cargar datos gracias a _drivers_ desde los _PowDevs_, mediante protocolo SNMP, por razones de simpleza de la lectura/escritura, y por asuntos de seguridad. Se experimentó localmente, sin uso de un _cluster_
+
+![SinNUT](/imgs/anexo3_docker_sin_nut.PNG)
+
+### 5. Ecosistema en Kubernetes + Rancher, con AD
 
 La versión final es el paso de contenedores a su orquestación gracias a Kubernetes (motor RKE1) y Rancher, asegurando Alta Disponibilidad
 
-![AD](/imgs/15_rancher_asbuild.png)
+![Rancher](/imgs/15_rancher_asbuild.png)
 
 **[Volver al README](/README.md)**
